@@ -7,26 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9AFF48F6205823C500131955 /* Xprobe.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9AFF48F2205823C500131955 /* Xprobe.mm */; };
+		9AFF48F7205823C500131955 /* Xprobe+Service.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9AFF48F3205823C500131955 /* Xprobe+Service.mm */; };
+		9AFF48F8205823C500131955 /* Xtrace.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9AFF48F5205823C500131955 /* Xtrace.mm */; };
 		BB356B701E0B1A5C0056B10F /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = BB356B6F1E0B1A5C0056B10F /* libz.tbd */; };
 		BB356B741E0B1AAE0056B10F /* BundleContents.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB356B721E0B1AAE0056B10F /* BundleContents.mm */; };
 		BB356B751E0B1AAE0056B10F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB356B731E0B1AAE0056B10F /* Info.plist */; };
 		BB356B931E0B807B0056B10F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB356B921E0B807B0056B10F /* UIKit.framework */; };
-		BB356BC31E0B93CC0056B10F /* Xprobe+Service.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB356BC21E0B93CC0056B10F /* Xprobe+Service.mm */; };
-		BB356BCC1E0BC3FE0056B10F /* Xtrace.mm in Sources */ = {isa = PBXBuildFile; fileRef = BB356BCA1E0BC3FE0056B10F /* Xtrace.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9AFF48F1205823C500131955 /* Xprobe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xprobe.h; sourceTree = "<group>"; };
+		9AFF48F2205823C500131955 /* Xprobe.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Xprobe.mm; sourceTree = "<group>"; };
+		9AFF48F3205823C500131955 /* Xprobe+Service.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "Xprobe+Service.mm"; sourceTree = "<group>"; };
+		9AFF48F4205823C500131955 /* Xtrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Xtrace.h; sourceTree = "<group>"; };
+		9AFF48F5205823C500131955 /* Xtrace.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Xtrace.mm; sourceTree = "<group>"; };
 		BB356B531E0B184C0056B10F /* InjectionLoader.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InjectionLoader.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB356B6F1E0B1A5C0056B10F /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		BB356B711E0B1AAE0056B10F /* BundleContents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BundleContents.h; sourceTree = SOURCE_ROOT; };
 		BB356B721E0B1AAE0056B10F /* BundleContents.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BundleContents.mm; sourceTree = SOURCE_ROOT; };
 		BB356B731E0B1AAE0056B10F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 		BB356B921E0B807B0056B10F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		BB356BC21E0B93CC0056B10F /* Xprobe+Service.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = "Xprobe+Service.mm"; path = "../../XprobePlugin/Classes/Xprobe+Service.mm"; sourceTree = "<group>"; };
-		BB356BC71E0BC3FE0056B10F /* Xprobe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Xprobe.h; path = ../../XprobePlugin/Classes/Xprobe.h; sourceTree = "<group>"; };
-		BB356BC81E0BC3FE0056B10F /* Xprobe.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Xprobe.mm; path = ../../XprobePlugin/Classes/Xprobe.mm; sourceTree = "<group>"; };
-		BB356BC91E0BC3FE0056B10F /* Xtrace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Xtrace.h; path = ../../XprobePlugin/Classes/Xtrace.h; sourceTree = "<group>"; };
-		BB356BCA1E0BC3FE0056B10F /* Xtrace.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Xtrace.mm; path = ../../XprobePlugin/Classes/Xtrace.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,11 +46,11 @@
 		BB356B4A1E0B184C0056B10F = {
 			isa = PBXGroup;
 			children = (
-				BB356BC91E0BC3FE0056B10F /* Xtrace.h */,
-				BB356BCA1E0BC3FE0056B10F /* Xtrace.mm */,
-				BB356BC71E0BC3FE0056B10F /* Xprobe.h */,
-				BB356BC81E0BC3FE0056B10F /* Xprobe.mm */,
-				BB356BC21E0B93CC0056B10F /* Xprobe+Service.mm */,
+				9AFF48F1205823C500131955 /* Xprobe.h */,
+				9AFF48F2205823C500131955 /* Xprobe.mm */,
+				9AFF48F3205823C500131955 /* Xprobe+Service.mm */,
+				9AFF48F4205823C500131955 /* Xtrace.h */,
+				9AFF48F5205823C500131955 /* Xtrace.mm */,
 				BB356B711E0B1AAE0056B10F /* BundleContents.h */,
 				BB356B721E0B1AAE0056B10F /* BundleContents.mm */,
 				BB356B731E0B1AAE0056B10F /* Info.plist */,
@@ -144,8 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB356BCC1E0BC3FE0056B10F /* Xtrace.mm in Sources */,
-				BB356BC31E0B93CC0056B10F /* Xprobe+Service.mm in Sources */,
+				9AFF48F8205823C500131955 /* Xtrace.mm in Sources */,
+				9AFF48F7205823C500131955 /* Xprobe+Service.mm in Sources */,
+				9AFF48F6205823C500131955 /* Xprobe.mm in Sources */,
 				BB356B741E0B1AAE0056B10F /* BundleContents.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

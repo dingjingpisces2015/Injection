@@ -20,7 +20,7 @@
 
 #import <Carbon/Carbon.h>
 #import <AppKit/NSEvent.h>
-#import "DDHotKeyCenter.h"
+//#import "DDHotKeyCenter.h"
 
 #define SWIFT_INJECTION_PORT INJECTION_PORT
 #define SWIFT_REMOTE_PORT REMOTE_PORT

@@ -9,7 +9,9 @@
 import Foundation
 
 //let kVK_ANSI_Equal: UInt16 = 0x18
-
+enum INBundleState :Int {
+case idle,connected
+}
 class Integration: NSObject {
 
     static var shared: Integration!
@@ -63,9 +65,9 @@ class Integration: NSObject {
 
         updateState(newState: .idle)
 
-        _ = DDHotKeyCenter.shared()?.registerHotKey(withKeyCode: UInt16(kVK_ANSI_Equal),
-                                                    modifierFlags: NSEventModifierFlags.control.rawValue,
-                                                    target: self, action: #selector(injectSource(sender:)), object: nil)
+//        _ = DDHotKeyCenter.shared()?.registerHotKey(withKeyCode: UInt16(kVK_ANSI_Equal),
+//                                                    modifierFlags: NSEventModifierFlags.control.rawValue,
+//                                                    target: self, action: #selector(injectSource(sender:)), object: nil)
 
         let expires = Date(timeIntervalSince1970: 1515929737.02325)//timeIntervalSinceNow:(2*31+8)*24*60*60)
         print("If not licensed, this copy will expire on: \(expires) \(expires.timeIntervalSince1970)")
@@ -242,8 +244,8 @@ class Integration: NSObject {
 extension AppDelegate {
 
     func applicationWillTerminate(_ notification: Notification) {
-        _ = DDHotKeyCenter.shared()?.unregisterHotKey(withKeyCode: UInt16(kVK_ANSI_Equal),
-                                                    modifierFlags: NSEventModifierFlags.control.rawValue)
+//        _ = DDHotKeyCenter.shared()?.unregisterHotKey(withKeyCode: UInt16(kVK_ANSI_Equal),
+//                                                    modifierFlags: NSEventModifierFlags.control.rawValue)
     }
 
     @IBAction func help(sender: NSMenuItem!) {
